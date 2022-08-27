@@ -11,7 +11,6 @@ app.use(express.urlencoded({  extended: false }));
 app.use(express.json());
 
 
-
 // CONTROLLERS
 
 app.use('/api/products', productController);
