@@ -1,0 +1,19 @@
+{
+  "name": "upg1-backend",
+  "version": "1.0.0",
+  "description": "Inlämningsuppgift 1 REST API med Node.js och express",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Jonis Bergman",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.3"
+  }
+}
