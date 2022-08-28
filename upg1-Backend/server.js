@@ -4,8 +4,12 @@ const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 9999;
 
-const serverURI = 'http://localhost:' + PORT;
-const mongoURI = process.env.MONGO_URI;
+
+// no env neeeded
+const serverURI = 'http://localhost:9999';
+const mongoURI = "mongodb+srv://Jonis:JS2db2022@cluster0.men5k.mongodb.net/js2inl?retryWrites=true&w=majority"
+
+
 
 app.listen(PORT, () => console.log('Server: ' + serverURI));
 
@@ -14,4 +18,6 @@ if(!mongoURI) {
 }   else    {
     mongoose.connect(mongoURI, () => console.log('Connected to DB'));
 }
+
+
 
